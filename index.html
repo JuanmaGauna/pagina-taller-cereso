@@ -9,9 +9,19 @@
     <meta name="description" content="Taller de arte para niños y niñas desde los 3 años en Córdoba. Un espacio creativo para explorar, jugar y aprender con técnicas libres, merienda incluida y todos los materiales. ¡Inscribite hoy!">
     <meta name="keywords" content="taller de arte infantil cordoba, taller de arte para niños cordoba, mariel cereso cordoba, actividades infantiles cordoba, aprender jugando, clase de arte niños">
     <meta name="author" content="Mariel Cereso">
-    <!-- Favicon (SVG inline temporal — reemplazar por logo real en assets/img/favicon.png cuando lo tengan) -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23FF6F59%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>MC</text></svg>">
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512.png">
+<!-- Google Analytics 4 — reemplazar G-XXXXXXXXXX por el Measurement ID real -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 <!-- Canonical: reemplazar TU-DOMINIO cuando esté comprado en NIC -->
 <link rel="canonical" href="https://TU-DOMINIO.com.ar/">
 
@@ -82,9 +92,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Logo con rotación juguetona -->
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-12 h-12 bg-coral rounded-[18px] flex items-center justify-center text-white font-bold text-xl shadow-md rotate-[-6deg] group-hover:rotate-12 transition-all duration-300 border-2 border-pizarra">
-                          MC
-                        </div>
+                <img src="assets/img/favicon.png" alt="Logo Mariel Cereso Taller de Arte Infantil" class="w-12 h-12 rounded-[18px] shadow-md rotate-[-6deg] group-hover:rotate-12 transition-all duration-300 border-2 border-pizarra object-cover">
                 <div class="flex flex-col">
                     <span class="font-bold text-lg sm:text-2xl tracking-tight text-pizarra group-hover:text-coral transition-colors">Mariel Cereso</span>
                     <span class="text-xs text-lila font-bold tracking-wider uppercase -mt-1 flex items-center gap-1">
@@ -758,7 +766,13 @@
                         <label class="block text-pizarra font-bold mb-2 text-sm">Tu mensaje o consulta adicional</label>
                         <textarea id="mensaje-adicional" rows="3" class="w-full p-4 border-2 border-pizarra/20 rounded-2xl focus-ring-custom text-pizarra bg-crema/40 font-semibold" placeholder="¿Querés consultar por un día y horario en especial?"></textarea>
                     </div>
-
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="acepto-privacidad" required class="mt-1 w-5 h-5 accent-coral shrink-0">
+                        <label for="acepto-privacidad" class="text-xs sm:text-sm text-pizarra/80">
+                            Acepto que mis datos sean utilizados para responder esta consulta, según la
+                            <a href="privacidad.html" target="_blank" class="text-coral underline font-bold">Política de Privacidad</a>.
+                        </label>
+                    </div>
                     <button type="submit" class="w-full bg-coral hover:bg-coral/95 text-white font-bold py-4 px-6 rounded-2xl shadow-md border-2 border-pizarra transition-all text-lg hover:scale-105">
                                 Quiero consultar por los cupos
                               </button>
@@ -785,9 +799,7 @@
                 <!-- Bloque 1: Identidad -->
                 <div class="md:col-span-5 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-coral rounded-xl flex items-center justify-center text-white font-bold text-xl border-2 border-crema">
-                                      MC
-                                    </div>
+                        <img src="assets/img/favicon.png" alt="Logo Mariel Cereso" class="w-10 h-10 rounded-xl border-2 border-crema object-cover">
                         <span class="font-bold text-xl tracking-tight font-handdrawn">Mariel Cereso</span>
                     </div>
                     <p class="text-sm text-crema/80 max-w-sm leading-relaxed font-semibold">
@@ -838,10 +850,19 @@
 
             <!-- Footer inferior / Legales -->
             <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-crema/60 gap-4 font-bold">
+                
                 <p>© 2026 Mariel Cereso Taller de Arte Infantil. Todos los derechos reservados.</p>
-                <p class="text-center sm:text-right">Diseñado con amor por las infancias en Córdoba, Argentina.</p>
+                <p class="text-center sm:text-right">Diseñado con amor por las infancias en Córdoba, Argentina.</p><p>
+                    Desarrollado por Compucor Tecnología.
+                    <a href="https://www.compucor.com.ar"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <strong>www.compucor.com.ar</strong>
+                    </a>  
+                </p>
             </div>
         </div>
+        
     </footer>
 
     <!-- App Logic File -->
