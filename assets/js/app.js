@@ -6,6 +6,7 @@ if (window.lucide) {
     setupGoogleBusinessSimulation();
     setupRegistrationForm();
     setupGalleryFilters();
+    setupBotonVolverArriba();
   });
   
   /**
@@ -83,6 +84,28 @@ if (window.lucide) {
       });
     });
   }
+  /**
+ * Muestra el botón "Volver arriba" solo cuando el usuario scrolleó
+ * hacia abajo, y lo lleva suavemente al inicio de la página al hacer clic.
+ */
+function setupBotonVolverArriba() {
+  const btn = document.getElementById('btn-volver-arriba');
+  if (!btn) return;
+
+  const UMBRAL_SCROLL = 400;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > UMBRAL_SCROLL) {
+      btn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+    } else {
+      btn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
   
   /**
    * Número de WhatsApp del taller que recibe las consultas del formulario.
