@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Mariel Cereso | Taller de Arte Infantil en Córdoba Capital</title>
+    <meta name="description" content="Taller de arte para niños y niñas desde los 3 años en Córdoba. Un espacio creativo para explorar, jugar y aprender con técnicas libres, merienda incluida y todos los materiales. ¡Inscribite hoy!">
+    <meta name="keywords" content="taller de arte infantil cordoba, taller de arte para niños cordoba, mariel cereso cordoba, actividades infantiles cordoba, aprender jugando, clase de arte niños">
+    <meta name="author" content="Mariel Cereso">
+    <!-- Favicon (SVG inline temporal — reemplazar por logo real en assets/img/favicon.png cuando lo tengan) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23FF6F59%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>MC</text></svg>">
+
+<!-- Canonical: reemplazar TU-DOMINIO cuando esté comprado en NIC -->
+<link rel="canonical" href="https://TU-DOMINIO.com.ar/">
+
+<!-- Open Graph (vista previa al compartir en WhatsApp/Facebook/Instagram) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Mariel Cereso | Taller de Arte Infantil">
+<meta property="og:title" content="Mariel Cereso | Taller de Arte Infantil en Córdoba Capital">
+<meta property="og:description" content="Taller de arte para niños y niñas desde los 3 años en Córdoba. Espacio creativo, materiales y merienda incluidos.">
+<meta property="og:url" content="https://TU-DOMINIO.com.ar/">
+<meta property="og:image" content="https://TU-DOMINIO.com.ar/assets/img/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mariel Cereso | Taller de Arte Infantil en Córdoba Capital">
+<meta name="twitter:description" content="Taller de arte para niños y niñas desde los 3 años en Córdoba.">
+<meta name="twitter:image" content="https://TU-DOMINIO.com.ar/assets/img/og-image.jpg">
+
+<!-- Datos estructurados para Google (aparecer en Maps / búsquedas locales) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ChildCare",
+  "name": "Mariel Cereso Taller de Arte Infantil",
+  "image": "https://TU-DOMINIO.com.ar/assets/img/og-image.jpg",
+  "telephone": "+5493515093572",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tristán de Tejeda 750",
+    "addressLocality": "Córdoba",
+    "postalCode": "X5008",
+    "addressCountry": "AR"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+      "opens": "15:30",
+      "closes": "19:30"
+    }
+  ],
+  "url": "https://TU-DOMINIO.com.ar/"
+}
+</script>
+    <!-- Lucide Icons (versión fija para evitar roturas si la librería actualiza) -->
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="text-pizarra relative antialiased min-h-screen pb-0">
+
+    <!-- Confetti Canvas overlay for form submit celebration -->
+    <canvas id="confetti-canvas" class="fixed inset-0 pointer-events-none z-50 hidden">
+    </canvas>
+
+    <!-- Banner Superior Decorativo / Aviso Importante con animación de colores -->
+    <div class="bg-gradient-to-r from-amarillo via-menta to-celeste text-pizarra text-center py-2 px-4 text-xs sm:text-sm font-bold relative z-50 flex items-center justify-center gap-2 border-b border-pizarra/10">
+        <span class="inline-block animate-bounce text-base">🎨</span>
+        <span>¡Inscripciones abiertas para el ciclo lectivo! Cupos limitados por grupo.</span>
+        <span class="hidden md:inline-block bg-coral text-white text-[10px] uppercase px-2 py-0.5 rounded-full animate-pulse-subtle">¡Últimos lugares!</span>
+    </div>
+
+    <!-- Cabecera y Navegación -->
+    <header class="sticky top-0 bg-crema/90 backdrop-blur-md z-40 border-b border-pizarra/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo con rotación juguetona -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 bg-coral rounded-[18px] flex items-center justify-center text-white font-bold text-xl shadow-md rotate-[-6deg] group-hover:rotate-12 transition-all duration-300 border-2 border-pizarra">
+                          MC
+                        </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg sm:text-2xl tracking-tight text-pizarra group-hover:text-coral transition-colors">Mariel Cereso</span>
+                    <span class="text-xs text-lila font-bold tracking-wider uppercase -mt-1 flex items-center gap-1">
+
+                                    Taller de Arte Infantil 
+                        <span class="text-coral">✨</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navegación Desktop -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="#sobre-taller" class="font-semibold text-pizarra/80 hover:text-coral transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-coral hover:after:w-full after:transition-all">Sobre el Taller</a>
+                <a href="#talleres" class="font-semibold text-pizarra/80 hover:text-coral transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-coral hover:after:w-full after:transition-all">Propuestas por Edad</a>
+                <a href="#galeria" class="font-semibold text-pizarra/80 hover:text-coral transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-coral hover:after:w-full after:transition-all">Galería Creativa</a>
+                <a href="#beneficios" class="font-semibold text-pizarra/80 hover:text-coral transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-coral hover:after:w-full after:transition-all">¿Por qué elegirnos?</a>
+                <a href="#contacto" class="font-semibold text-pizarra/80 hover:text-coral transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-coral hover:after:w-full after:transition-all">Inscripción</a>
+            </nav>
+
+            <!-- Botones de Conversión Rápida -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="https://wa.me/5493515093572?text=Hola%20Mariel%20quiero%20consultar%20por%20los%20talleres%20de%20arte%20para%20mi%20hijo/a" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-menta hover:bg-menta/80 text-pizarra font-bold px-4 py-2 rounded-full text-xs sm:text-sm border-2 border-pizarra shadow-sm hover:shadow transition-all hover:-translate-y-0.5">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-pizarra"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#contacto" class="bg-coral hover:bg-coral/95 hover:scale-105 active:scale-95 text-white font-bold px-4 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm shadow-md border-2 border-pizarra transition-all">
+                          Reservar Lugar
+                        </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Principal -->
+    <section class="relative pt-10 pb-20 md:py-24 overflow-hidden">
+        <!-- Manchas y formas orgánicas flotantes en el fondo -->
+        <div class="absolute top-10 right-[-10%] w-[450px] h-[450px] bg-amarillo/30 blob-organic animate-float-slow -z-10 filter blur-xl"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-celeste/40 blob-organic animate-float-fast -z-10 filter blur-xl"></div>
+        <div class="absolute top-[40%] left-[20%] w-[120px] h-[120px] bg-lila/20 blob-organic animate-float-slow -z-10 filter blur-lg"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Texto Hero -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-lila/10 text-lila px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-lila/20">
+                        <span class="w-2.5 h-2.5 rounded-full bg-lila animate-ping"></span>
+
+                                    Taller Creativo en Córdoba Capital • Zona Norte
+                                  
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-pizarra">
+
+                                    Un espacio para 
+                        <span class="text-coral relative inline-block">
+                            crear, imaginar
+                            <span class="absolute left-0 bottom-0 w-full h-2.5 bg-amarillo -z-10 rounded-full"></span>
+                        </span>
+                         y aprender jugando.
+                                  
+                    </h1>
+                    <p class="text-base sm:text-lg text-pizarra/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+
+                                    Mariel Cereso Taller de Arte Infantil es un rincón de libertad y color en Córdoba diseñado especialmente para niñas y niños 
+                        <span class="underline decoration-coral decoration-2 font-semibold">desde los 5 años de edad.</span>          
+                    </p>
+
+                    <!-- Botones CTA de Conversión -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#contacto" class="btn-primary inline-flex items-center justify-center gap-2 bg-coral hover:bg-coral/95 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg border-2 border-pizarra transition-all">
+
+                                          Reservar Lugar
+                                          
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        </a>
+                        <a href="tel:03515093572" class="btn-secondary inline-flex items-center justify-center gap-2 bg-white hover:bg-crema text-pizarra font-bold text-lg px-8 py-4 rounded-2xl border-2 border-pizarra shadow-sm hover:shadow transition-all">
+
+                                          Llamar Ahora
+                                          
+                            <i data-lucide="phone" class="w-5 h-5 text-coral"></i>
+                        </a>
+                    </div>
+
+                    <!-- Atributos Clave Destacados -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-5 pt-6 text-sm text-pizarra/80 font-bold">
+                        <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-full border border-pizarra/10 shadow-sm">
+                            <span class="text-base">🎨</span>
+                            <span>Todos los materiales incluidos</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-full border border-pizarra/10 shadow-sm">
+                            <span class="text-base">🧁</span>
+                            <span>Merienda casera incluida</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-full border border-pizarra/10 shadow-sm">
+                            <span class="text-base">🎒</span>
+                            <span>Llevan a casa objetos reales de uso</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen Creativa Ilustrada (Lienzo simulado con Marcos Orgánicos y Manchas) -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-[420px] aspect-square p-4">
+                        <!-- Manchas de acuarela simuladas detrás del lienzo -->
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-menta/50 rounded-full mix-blend-multiply filter blur-xl animate-float-slow"></div>
+                        <div class="absolute -bottom-6 -right-6 w-36 h-36 bg-coral/30 rounded-full mix-blend-multiply filter blur-xl animate-float-fast"></div>
+
+                        <!-- Marco Orgánico del Lienzo con sombra suave -->
+                        <div class="absolute inset-0 bg-lila rounded-[40px] rotate-3 shadow-xl opacity-80 animate-float-slow"></div>
+                        <div class="absolute inset-0 bg-amarillo rounded-[40px] -rotate-3 shadow-lg opacity-90"></div>
+
+                        <!-- Contenedor del Lienzo con Estética Táctil y Pinceladas -->
+                        <div class="relative w-full h-full bg-crema border-4 border-pizarra overflow-hidden rounded-[36px] flex flex-col justify-between p-6 shadow-inner">
+                            <div class="flex justify-between items-center w-full">
+                                <span class="text-xs bg-pizarra text-crema px-2.5 py-1 rounded-md font-bold rotate-[-3deg] border border-pizarra">MARIEL CERESO</span>
+                                <div class="flex gap-1">
+                                    <span class="w-3.5 h-3.5 bg-coral rounded-full border border-pizarra"></span>
+                                    <span class="w-3.5 h-3.5 bg-lila rounded-full border border-pizarra"></span>
+                                    <span class="w-3.5 h-3.5 bg-menta rounded-full border border-pizarra"></span>
+                                </div>
+                            </div>
+
+                            <!-- Simulación de obra infantil de arte / Collage minimalista vibrante -->
+                            <div class="my-auto py-4 flex flex-col items-center justify-center text-center">
+                                <div class="relative w-32 h-32 flex items-center justify-center mb-4">
+                                    <div class="absolute inset-0 bg-coral/20 rounded-full animate-ping"></div>
+                                    <!-- Mancha acuarela SVG decorativa -->
+                                    <svg class="absolute inset-0 w-full h-full text-amarillo/70 fill-current animate-float-fast" viewBox="0 0 100 100">
+                                        <path d="M50 15 C30 10, 10 30, 15 50 C20 70, 40 90, 60 85 C80 80, 95 60, 90 40 C85 20, 70 20, 50 15 Z"></path>
+                                    </svg>
+                                    <div class="relative w-24 h-24 bg-gradient-to-tr from-coral via-lila to-menta rounded-full flex items-center justify-center text-white text-4xl animate-float-fast shadow-md border-2 border-pizarra">
+                                                        🎨
+                                                      </div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-pizarra leading-tight font-handdrawn">¡Manitos en acción!</h3>
+                                <p class="text-xs text-pizarra/70 mt-1.5 max-w-[240px]">Un taller donde el arte se siente, se experimenta y se comparte con alegría.</p>
+                            </div>
+
+                            <div class="flex justify-between items-center w-full text-xs font-bold text-pizarra/80 border-t-2 border-dashed border-pizarra/20 pt-3">
+                                <span class="flex items-center gap-1">📍 Tristán de Tejeda 750</span>
+                                <span>Desde 5 años</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divisor dibujado a mano (Borde ondulado de papel con SVG) -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-[30px] text-celeste/40 fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,90 350,120 600,60 C850,0 1050,30 1200,90 L1200,120 L0,120 Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Sección: Sobre el Taller (Filosofía y Enfoque Pedagógico) -->
+    <section id="sobre-taller" class="py-20 bg-celeste/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Texto Explicativo -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs bg-lila/20 text-lila font-bold px-3 py-1 rounded-full border border-lila/30 uppercase tracking-wider">¿Quiénes somos?</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pizarra font-handdrawn leading-tight">
+                                El arte no es rellenar moldes, es descubrir nuevos mundos.
+                              </h2>
+                    <div class="w-24 h-1.5 bg-coral rounded-full"></div>
+
+                    <div class="space-y-4 text-pizarra/80 leading-relaxed text-base sm:text-lg">
+                        <p>
+
+                                          El taller está dirigido a 
+                            <strong>niñas y niños desde los 5 años en adelante.</strong>
+                                        
+                        </p>
+                        <p class="bg-white/80 p-4 rounded-2xl border-2 border-dashed border-lila/30 relative">
+                            <span class="absolute -top-3 -left-2 text-xl">💡</span>
+                            <strong>No es necesario traer materiales</strong>
+                            : solo ganas de crear y aprender. En cada clase exploramos técnicas artísticas novedosas y realizamos hermosos objetos y decoraciones que cada niñx podrá llevarse a su hogar para darle un uso real y duradero.
+                                        
+                        </p>
+                        <p>
+
+                                          Y porque la creatividad abre el apetito, ¡cada una de nuestras clases incluye una 
+                            <strong>merienda compartida súper rica y nutritiva</strong>
+                            !
+                                        
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="tel:03515093572" class="inline-flex items-center gap-2 bg-pizarra text-white font-bold py-3 px-6 rounded-xl hover:bg-pizarra/90 border-2 border-pizarra shadow-sm hover:-translate-y-0.5 transition-all">
+                            <i data-lucide="phone" class="w-5 h-5 text-menta"></i>
+                            <span>Llamar ahora</span>
+                        </a>
+                        <a href="#contacto" class="inline-flex items-center gap-2 bg-coral text-white font-bold py-3 px-6 rounded-xl hover:bg-coral/95 border-2 border-pizarra shadow-sm hover:-translate-y-0.5 transition-all">
+                            <span>Reservar lugar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pilares visuales en tarjetas dibujadas a mano -->
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Pilar 1 -->
+                    <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md transition-all border-handdrawn">
+                        <div class="w-12 h-12 bg-coral/10 text-coral rounded-xl flex items-center justify-center mb-4 border border-pizarra">
+                            <i data-lucide="palette" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-pizarra mb-2 font-handdrawn">Técnicas nuevas</h3>
+                        <p class="text-sm text-pizarra/70">Pintura, modelado, collage, reciclado creativo y texturas increíbles.</p>
+                    </div>
+
+                    <!-- Pilar 2 -->
+                    <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md transition-all border-handdrawn">
+                        <div class="w-12 h-12 bg-lila/10 text-lila rounded-xl flex items-center justify-center mb-4 border border-pizarra">
+                            <i data-lucide="smile" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-pizarra mb-2 font-handdrawn">Libertad Creativa</h3>
+                        <p class="text-sm text-pizarra/70">Acompañamiento cálido que estimula el estilo propio de cada niño o niña.</p>
+                    </div>
+
+                    <!-- Pilar 3 -->
+                    <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md transition-all border-handdrawn">
+                        <div class="w-12 h-12 bg-menta/20 text-pizarra rounded-xl flex items-center justify-center mb-4 border border-pizarra">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-pizarra mb-2 font-handdrawn">Materiales Incluidos</h3>
+                        <p class="text-sm text-pizarra/70">No tenés que comprar nada. Ofrecemos herramientas seguras y no tóxicas.</p>
+                    </div>
+
+                    <!-- Pilar 4 -->
+                    <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center border-dashed border-lila/40">
+                        <span class="text-3xl mb-2 animate-bounce">🧁</span>
+                        <h3 class="text-base font-bold text-pizarra font-handdrawn">Merienda Incluida</h3>
+                        <p class="text-xs text-pizarra/60 mt-1 max-w-[160px]">Una pausa saludable para compartir risas y hacer nuevos amigos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Propuestas por Edad (Talleres) -->
+    <section id="talleres" class="py-20 relative overflow-hidden bg-crema">
+        <!-- Manchas de pintura sutiles de fondo -->
+        <svg class="absolute top-10 left-[-5%] w-72 h-72 text-amarillo/30 fill-current -z-10" viewBox="0 0 100 100">
+            <path d="M40,20 C60,10 90,30 80,60 C70,90 30,100 20,70 C10,40 20,30 40,20 Z"></path>
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs bg-coral/10 text-coral font-bold px-3 py-1 rounded-full border border-coral/30 uppercase tracking-wider">Edades y grupos</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-pizarra font-handdrawn mt-2">Nuestras propuestas de Taller</h2>
+                <p class="text-pizarra/70 mt-3 text-base sm:text-lg">Un espacio diseñado para cada etapa de desarrollo artístico de tus hijos.</p>
+                <div class="w-16 h-1 bg-lila mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Grid de propuestas diferenciadas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+                </div>
+
+                <!-- Taller Infantil (desde 6 años) -->
+                <div class="bg-white rounded-[32px] overflow-hidden border-2 border-pizarra shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col h-full">
+                    <!-- Cabecera de la tarjeta con color distintivo -->
+                    <div class="bg-coral/10 p-8 text-center relative border-b-2 border-pizarra">
+                        <span class="absolute top-4 right-4 bg-coral text-white text-[10px] px-3 py-1 rounded-full font-bold border border-pizarra animate-pulse">CUPOS LIMITADOS</span>
+                        <div class="w-16 h-16 bg-white text-coral rounded-full flex items-center justify-center text-3xl mx-auto mb-4 shadow-sm border-2 border-pizarra animate-float-fast">
+                                      🚀
+                                    </div>
+                        <h3 class="text-2xl font-bold text-pizarra font-handdrawn">Taller Infantil</h3>
+                        <p class="text-sm text-pizarra/70 font-semibold mt-1 bg-white/70 px-3 py-1 rounded-full inline-block border border-pizarra/10">Desde los 6 años en adelante</p>
+                    </div>
+                    <!-- Contenido tarjeta -->
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <p class="text-pizarra/80 text-base leading-relaxed">
+                                            Taller libre para mentes más curiosas. Aprendemos técnicas de modelado con arcilla, dibujo con carbonilla, acuarela sobre papel de alto gramaje, costura simple, collage y la creación de objetos con utilidad real.
+                                          </p>
+                            <div class="border-t-2 border-dashed border-pizarra/10 pt-4 space-y-2">
+                                <div class="flex items-center gap-3 text-sm text-pizarra/70 font-semibold">
+                                    <i data-lucide="clock" class="w-4 h-4 text-lila shrink-0"></i>
+                                    <span>Lunes y Miércoles de 17:30 a 19:00 hs.</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-pizarra/70 font-semibold">
+                                    <i data-lucide="paint-bucket" class="w-4 h-4 text-coral shrink-0"></i>
+                                    <span>Objetos reales para llevar a casa.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-8">
+                            <a href="#contacto" class="w-full text-center block bg-coral hover:bg-coral/95 hover:scale-105 text-white font-bold py-3.5 px-6 rounded-xl shadow-sm border-2 border-pizarra transition-all">
+                                            Reservar Mi Clase de Prueba
+                                          </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Galería Creativa (Filtrable) -->
+    <section id="galeria" class="py-20 bg-celeste/20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs bg-lila/20 text-lila font-bold px-3 py-1 rounded-full border border-lila/30 uppercase tracking-wider">Pequeños artistas, grandes obras</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-pizarra font-handdrawn mt-2">Galería del Taller</h2>
+                <p class="text-pizarra/70 mt-3 text-base sm:text-lg">Un recorrido visual por las obras reales y manualidades que creamos con tanto amor.</p>
+                <div class="w-16 h-1 bg-coral mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Filtros de Galería -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10 max-w-lg mx-auto">
+                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-pizarra text-white transition-all active" data-filter="todos">Todos</button>
+                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-white text-pizarra hover:bg-crema transition-all" data-filter="pintura">Pintura</button>
+                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-white text-pizarra hover:bg-crema transition-all" data-filter="modelado">Modelado</button>
+                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-white text-pizarra hover:bg-crema transition-all" data-filter="manualidades">Objetos Útiles</button>
+            </div>
+
+            <!-- Grid de Galería -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Obras simulación artística con placeholders súper estéticos de acuarela y dibujo -->
+                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="pintura">
+                    <div class="aspect-square bg-gradient-to-tr from-coral/40 via-amarillo/40 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
+                        <span class="text-6xl animate-float-slow">🎨</span>
+                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Acuarela libre</span>
+                    </div>
+                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"El Dragón de Colores"</h4>
+                    <p class="text-xs text-pizarra/60">Hecho por Lucas (7 años)</p>
+                </div>
+
+                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="modelado">
+                    <div class="aspect-square bg-gradient-to-tr from-lila/30 via-menta/40 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
+                        <span class="text-6xl animate-float-fast">🦕</span>
+                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Arcilla y témpera</span>
+                    </div>
+                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Dino de Arcilla"</h4>
+                    <p class="text-xs text-pizarra/60">Hecho por Sofía (5 años)</p>
+                </div>
+
+                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="manualidades">
+                    <div class="aspect-square bg-gradient-to-tr from-amarillo/40 via-menta/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
+                        <span class="text-6xl animate-float-slow">🏺</span>
+                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Modelado Útil</span>
+                    </div>
+                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Maceta Carita Alegre"</h4>
+                    <p class="text-xs text-pizarra/60">Hecho por Felipe (9 años)</p>
+                </div>
+
+                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="pintura">
+                    <div class="aspect-square bg-gradient-to-tr from-lila/40 via-coral/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
+                        <span class="text-6xl animate-float-slow">🌈</span>
+                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Pintura acrílica</span>
+                    </div>
+                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Cielo del Atardecer"</h4>
+                    <p class="text-xs text-pizarra/60">Hecho por Martina (8 años)</p>
+                </div>
+
+                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="manualidades">
+                    <div class="aspect-square bg-gradient-to-tr from-menta/40 via-amarillo/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
+                        <span class="text-6xl animate-float-fast">👑</span>
+                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Collage Textil</span>
+                    </div>
+                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Corona de Rey Mágico"</h4>
+                    <p class="text-xs text-pizarra/60">Hecho por Ramiro (4 años)</p>
+                </div>
+
+                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="modelado">
+                    <div class="aspect-square bg-gradient-to-tr from-coral/30 via-lila/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
+                        <span class="text-6xl animate-float-slow">🧁</span>
+                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Pastelina sólida</span>
+                    </div>
+                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Cupcake del Bosque"</h4>
+                    <p class="text-xs text-pizarra/60">Hecho por Emilia (6 años)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Valor Diferencial (¿Por qué elegirnos?) -->
+    <section id="beneficios" class="py-20 bg-crema relative border-t border-pizarra/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs bg-menta text-pizarra font-bold px-3 py-1 rounded-full border border-pizarra uppercase tracking-wider">Nuestra Propuesta de Valor</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-pizarra font-handdrawn mt-2">¿Por qué elegir este taller?</h2>
+                <p class="text-pizarra/70 mt-3 text-base sm:text-lg">Las ventajas de un ambiente cuidado, cálido y plenamente artístico para tu peque.</p>
+                <div class="w-16 h-1 bg-coral mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Beneficio 1 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md hover:scale-105 transition-all text-center">
+                    <div class="w-14 h-14 bg-menta/30 text-pizarra rounded-2xl flex items-center justify-center mx-auto mb-4 border-2 border-pizarra animate-float-slow">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-pizarra font-handdrawn">Cero materiales extra</h3>
+                    <p class="text-sm text-pizarra/70">No gastes de más en témperas, pinceles o papeles de gramaje especial. ¡Nosotros proveemos todo!</p>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md hover:scale-105 transition-all text-center">
+                    <div class="w-14 h-14 bg-lila/20 text-lila rounded-2xl flex items-center justify-center mx-auto mb-4 border-2 border-pizarra animate-float-fast">
+                        <i data-lucide="coffee" class="w-6 h-6 text-pizarra"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-pizarra font-handdrawn">Merienda casera</h3>
+                    <p class="text-sm text-pizarra/70">Un espacio para la pausa, comer rico, charlar y socializar entre pares en un ambiente de cariño.</p>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md hover:scale-105 transition-all text-center">
+                    <div class="w-14 h-14 bg-coral/20 text-coral rounded-2xl flex items-center justify-center mx-auto mb-4 border-2 border-pizarra animate-float-slow">
+                        <i data-lucide="palette" class="w-6 h-6 text-pizarra"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-pizarra font-handdrawn">Técnicas nuevas</h3>
+                    <p class="text-sm text-pizarra/70">Cada semana es una nueva aventura: grabados, acuarelas, modelado en arcilla y objetos tridimensionales.</p>
+                </div>
+
+                <!-- Beneficio 4 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-md hover:scale-105 transition-all text-center">
+                    <div class="w-14 h-14 bg-amarillo/40 text-pizarra rounded-2xl flex items-center justify-center mx-auto mb-4 border-2 border-pizarra animate-float-fast">
+                        <i data-lucide="check" class="w-6 h-6 text-pizarra"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-pizarra font-handdrawn">Objetos con uso real</h3>
+                    <p class="text-sm text-pizarra/70">Todo lo que creamos tiene sentido y utilidad para que cada niño disfrute usándolo en su día a día.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Confianza: Ficha de Google Business y Testimonios -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Ficha de Google Business Simulada -->
+                <div class="lg:col-span-5">
+                    <div class="bg-crema p-6 sm:p-8 rounded-[36px] border-4 border-pizarra shadow-lg relative">
+                        <div class="absolute -top-3 -right-3 bg-menta text-pizarra text-xs font-bold px-4 py-1.5 rounded-full border-2 border-pizarra uppercase">OFICIAL</div>
+
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-xl shadow-inner font-bold border-2 border-pizarra text-coral">
+                                            G
+                                          </div>
+                            <div>
+                                <h3 class="font-bold text-pizarra text-lg leading-tight font-handdrawn">Mariel Cereso</h3>
+                                <p class="text-xs text-pizarra/60 font-semibold">Taller de arte infantil en Córdoba</p>
+                            </div>
+                        </div>
+
+                        <!--
+                            IMPORTANTE: se quitó la calificación "5.0 (65+ opiniones)"
+                            porque era un dato inventado por la herramienta de IA.
+                            Mostrar una calificación o cantidad de reseñas falsa es
+                            publicidad engañosa. Cuando tengan la Ficha de Google
+                            Business real, reemplacen este bloque por el widget
+                            oficial de Google o por el número real de reseñas.
+                        -->
+                        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" id="link-google-business" class="flex items-center gap-2 mb-4 bg-white/70 hover:bg-white p-3 rounded-2xl border border-pizarra/10 transition-colors">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5"></i>
+                                <i data-lucide="star" class="w-5 h-5"></i>
+                                <i data-lucide="star" class="w-5 h-5"></i>
+                                <i data-lucide="star" class="w-5 h-5"></i>
+                                <i data-lucide="star" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs text-coral font-bold ml-auto">Ver opiniones reales en Google →</span>
+                        </a>
+
+                        <!-- Datos Físicos -->
+                        <div class="space-y-3 text-sm text-pizarra/80 border-t-2 border-b-2 border-dashed border-pizarra/15 py-4 my-4 font-semibold">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-coral shrink-0"></i>
+                                <span>Tristán de Tejeda 750, X5008 Córdoba, Argentina</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-4 h-4 text-lila shrink-0"></i>
+                                <span>0351 509-3572</span>
+                            </div>
+                        </div>
+
+                        <!-- Botones Interactivos de Ficha -->
+                        <div class="grid grid-cols-3 gap-2">
+                            <button id="btn-opinion" class="flex flex-col items-center justify-center p-2.5 bg-white hover:bg-coral/10 hover:text-coral rounded-xl border-2 border-pizarra transition-all text-center">
+                                <i data-lucide="edit-3" class="w-5 h-5 mb-1 text-coral"></i>
+                                <span class="text-[10px] font-bold">Escribir opinión</span>
+                            </button>
+                            <button id="btn-guardar" class="flex flex-col items-center justify-center p-2.5 bg-white hover:bg-lila/10 hover:text-lila rounded-xl border-2 border-pizarra transition-all text-center">
+                                <i id="icon-guardar" data-lucide="bookmark" class="w-5 h-5 mb-1 text-lila"></i>
+                                <span class="text-[10px] font-bold">Guardar</span>
+                            </button>
+                            <button id="btn-compartir" class="flex flex-col items-center justify-center p-2.5 bg-white hover:bg-menta/20 hover:text-pizarra rounded-xl border-2 border-pizarra transition-all text-center">
+                                <i data-lucide="share-2" class="w-5 h-5 mb-1 text-pizarra"></i>
+                                <span class="text-[10px] font-bold">Compartir</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonios reales simulados -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h2 class="text-3xl font-bold text-pizarra font-handdrawn">
+                                ¿Qué opinan las familias de Córdoba?
+                              </h2>
+                    <div class="w-16 h-1 bg-lila rounded-full"></div>
+
+                    <!--
+                        ⚠️ TESTIMONIOS DE EJEMPLO — NO SON REALES.
+                        Antes de publicar el sitio, reemplazar estos dos testimonios
+                        por reseñas reales de familias, con su autorización explícita
+                        para usar nombre/edad del niño o niña. Publicar testimonios
+                        inventados como si fueran reales es publicidad engañosa.
+                    -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Testimonio 1 -->
+                        <div class="bg-crema p-6 rounded-3xl border-2 border-pizarra shadow-sm relative hover:scale-[1.02] transition-all">
+                            <div class="flex text-yellow-400 mb-2">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-sm text-pizarra/80 italic mb-4">
+                                            "A Lucas le encanta venir. Respetan su ritmo e imaginación libre, y siempre se va súper orgulloso con sus macetitas pintadas o sus figuras de arcilla. ¡Y la merienda es un momento mágico!"
+                                          </p>
+                            <h4 class="font-bold text-pizarra text-sm">Laura M.</h4>
+                            <p class="text-xs text-pizarra/50 font-semibold">Mamá de Lucas (7 años) • Córdoba</p>
+                        </div>
+
+                        <!-- Testimonio 2 -->
+                        <div class="bg-crema p-6 rounded-3xl border-2 border-pizarra shadow-sm relative hover:scale-[1.02] transition-all">
+                            <div class="flex text-yellow-400 mb-2">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-sm text-pizarra/80 italic mb-4">
+                                            "Buscaba un espacio artístico de verdad, no de plantillas aburridas. Mariel es súper cariñosa y los guía con un profesionalismo hermoso. Totalmente recomendado para mamás y papás que aman el arte libre."
+                                          </p>
+                            <h4 class="font-bold text-pizarra text-sm">Andrés T.</h4>
+                            <p class="text-xs text-pizarra/50 font-semibold">Papá de Sofía (4 años) • Córdoba</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación con Mapa Interactivo -->
+    <section class="py-20 bg-crema relative border-t-2 border-pizarra/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Información Física y Acceso -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-block bg-coral/10 text-coral font-bold px-4 py-1.5 rounded-full text-xs border border-coral/30">
+                                ¡UBICACIÓN VERIFICADA EN CÓRDOBA!
+                              </div>
+                    <h2 class="text-3xl font-bold text-pizarra font-handdrawn">Nuestro espacio artístico</h2>
+                    <p class="text-pizarra/80 text-base sm:text-lg">
+                                Te esperamos en nuestro cálido taller de la ciudad de Córdoba. Contamos con un espacio luminoso, ventilado y lleno de inspiración para los pequeños artistas.
+                              </p>
+
+                    <div class="space-y-4 font-semibold">
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-2xl border border-pizarra/10">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-coral mt-1 shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-pizarra">Ubicación</h4>
+                                <p class="text-sm text-pizarra/70">Tristán de Tejeda 750, X5008 Córdoba, Argentina.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-2xl border border-pizarra/10">
+                            <i data-lucide="clock" class="w-5 h-5 text-lila mt-1 shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-pizarra">Horarios de atención</h4>
+                                <p class="text-sm text-pizarra/70">Lunes a Jueves de 15:30 a 19:30 hs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://maps.google.com/?q=Tristan+de+Tejeda+750+Cordoba" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-coral hover:bg-coral/95 hover:scale-105 text-white font-bold py-4 px-8 rounded-2xl shadow-md border-2 border-pizarra transition-all">
+                            <i data-lucide="navigation" class="w-5 h-5"></i>
+                            <span>Cómo llegar paso a paso</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contenedor del Mapa Simulado interactivo con arte -->
+                <div class="lg:col-span-7">
+                    <div class="relative w-full aspect-video min-h-[300px] bg-celeste/40 rounded-[36px] overflow-hidden border-4 border-pizarra shadow-lg">
+                        <div class="absolute inset-0 flex items-center justify-center p-4">
+                            <!-- Grid decorativo simulando calles urbanas de Córdoba -->
+                            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
+                            <!-- Marcador de ubicación física -->
+                            <div class="relative z-10 flex flex-col items-center">
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-coral animate-bounce">
+                                    <span class="text-3xl">🎨</span>
+                                </div>
+                                <div class="mt-3 bg-pizarra text-crema text-xs px-4 py-2 rounded-xl font-bold shadow-md text-center border-2 border-pizarra">
+                                    <p>Mariel Cereso Taller de Arte</p>
+                                    <p class="font-normal text-crema/70 mt-0.5">Tristán de Tejeda 750</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Superposición de controles de mapa simulados -->
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-2xl flex items-center justify-between border-2 border-pizarra shadow-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-menta animate-ping"></span>
+                                <span class="text-xs font-bold text-pizarra">Ubicación exacta verificada</span>
+                            </div>
+                            <a href="https://maps.google.com/?q=Tristan+de+Tejeda+750+Cordoba" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-coral hover:underline">
+                                            Abrir Google Maps
+                                          </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Formulario de Contacto (Captación de Cupos) -->
+    <section id="contacto" class="py-20 bg-amarillo relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="bg-white p-8 sm:p-12 rounded-[36px] border-4 border-pizarra shadow-xl">
+                <div class="text-center max-w-lg mx-auto mb-10">
+                    <span class="text-3xl animate-bounce inline-block">🧁</span>
+                    <h2 class="text-3xl font-bold text-pizarra font-handdrawn mt-2">¡Regálale una tarde de juego y color!</h2>
+                    <p class="text-pizarra/70 mt-2 text-sm sm:text-base">
+                                Consultá cupos, horarios o coordiná una clase de prueba completando este breve formulario. ¡Te responderemos enseguida por WhatsApp!
+                              </p>
+                </div>
+
+                <!-- Formulario con feedback dinámico -->
+                <form id="form-registro" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-pizarra font-bold mb-2 text-sm">Tu Nombre Completo</label>
+                            <input type="text" id="nombre-padre" required class="w-full p-4 border-2 border-pizarra/20 rounded-2xl focus-ring-custom text-pizarra bg-crema/40 font-semibold" placeholder="Ej. María Belén Pérez">
+                        </div>
+
+                        <div>
+                            <label class="block text-pizarra font-bold mb-2 text-sm">Nombre y Edad de tu peque</label>
+                            <input type="text" id="datos-peque" required class="w-full p-4 border-2 border-pizarra/20 rounded-2xl focus-ring-custom text-pizarra bg-crema/40 font-semibold" placeholder="Ej. Bruno, 5 años">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-pizarra font-bold mb-2 text-sm">Tu WhatsApp de Contacto</label>
+                            <input type="tel" id="tel-padre" required class="w-full p-4 border-2 border-pizarra/20 rounded-2xl focus-ring-custom text-pizarra bg-crema/40 font-semibold" placeholder="Ej. 0351 155-000000">
+                        </div>
+
+                        <div>
+                            <label class="block text-pizarra font-bold mb-2 text-sm">Selecciona el Taller</label>
+                            <select id="taller-interes" required class="w-full p-4 border-2 border-pizarra/20 rounded-2xl focus-ring-custom text-pizarra bg-crema/40 font-bold">
+                                <option value="">Selecciona una opción</option>
+                                <option value="kids">Taller Kids (3 a 6 años)</option>
+                                <option value="infantil">Taller Infantil (desde 6 años)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-pizarra font-bold mb-2 text-sm">Tu mensaje o consulta adicional</label>
+                        <textarea id="mensaje-adicional" rows="3" class="w-full p-4 border-2 border-pizarra/20 rounded-2xl focus-ring-custom text-pizarra bg-crema/40 font-semibold" placeholder="¿Querés consultar por un día y horario en especial?"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-coral hover:bg-coral/95 text-white font-bold py-4 px-6 rounded-2xl shadow-md border-2 border-pizarra transition-all text-lg hover:scale-105">
+                                Quiero consultar por los cupos
+                              </button>
+                </form>
+
+                <!-- Mensaje de Feedback Éxito (Animación de acuarela) -->
+                <div id="feedback-exito" class="hidden mt-6 bg-menta/30 border-4 border-pizarra p-8 rounded-3xl text-center space-y-4 animate-fade-in-up">
+                    <p class="text-4xl animate-bounce">🎨✨🎉</p>
+                    <p class="font-bold text-pizarra text-2xl font-handdrawn">¡Se abrió WhatsApp con tu consulta!</p>
+                    <p class="text-sm sm:text-base text-pizarra/80 font-bold">
+                                Revisá la pestaña de WhatsApp que se abrió y enviá el mensaje que preparamos con tus datos. ¡Te responderemos a la brevedad!
+                              </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pizarra text-crema pt-16 pb-8 border-t-2 border-pizarra">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-crema/10">
+
+                <!-- Bloque 1: Identidad -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-coral rounded-xl flex items-center justify-center text-white font-bold text-xl border-2 border-crema">
+                                      MC
+                                    </div>
+                        <span class="font-bold text-xl tracking-tight font-handdrawn">Mariel Cereso</span>
+                    </div>
+                    <p class="text-sm text-crema/80 max-w-sm leading-relaxed font-semibold">
+                                Un taller donde cada niño puede explorar su creatividad, aprender y disfrutar de un espacio cuidado, alegre y profesional.
+                              </p>
+                </div>
+
+                <!-- Bloque 2: Enlaces Rápidos -->
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="font-bold text-lg text-amarillo font-handdrawn">El Taller</h4>
+                    <ul class="space-y-2 text-sm text-crema/80 font-bold">
+                        <li>
+                            <a href="#sobre-taller" class="hover:underline hover:text-coral transition-colors">Quiénes Somos</a>
+                        </li>
+                        <li>
+                            <a href="#talleres" class="hover:underline hover:text-coral transition-colors">Talleres y Horarios</a>
+                        </li>
+                        <li>
+                            <a href="#galeria" class="hover:underline hover:text-coral transition-colors">Galería Creativa</a>
+                        </li>
+                        <li>
+                            <a href="#beneficios" class="hover:underline hover:text-coral transition-colors">Nuestros Pilares</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bloque 3: Datos de Contacto y Redes -->
+                <div class="md:col-span-4 space-y-4">
+                    <h4 class="font-bold text-lg text-menta font-handdrawn">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-crema/80 font-bold">
+                        <li>📍 Tristán de Tejeda 750, Córdoba</li>
+                        <li>📞 0351 509-3572</li>
+                        <li>✉️ marielcereso.taller@gmail.com</li>
+                    </ul>
+                    <div class="flex gap-4 pt-2">
+                        <!-- Icono Instagram -->
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-crema/10 rounded-xl flex items-center justify-center hover:bg-coral hover:text-white transition-all text-crema border border-crema/20">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <!-- Icono Facebook -->
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-crema/10 rounded-xl flex items-center justify-center hover:bg-lila hover:text-white transition-all text-crema border border-crema/20">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer inferior / Legales -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-crema/60 gap-4 font-bold">
+                <p>© 2026 Mariel Cereso Taller de Arte Infantil. Todos los derechos reservados.</p>
+                <p class="text-center sm:text-right">Diseñado con amor por las infancias en Córdoba, Argentina.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Logic File -->
+    <script type="module" src="assets/js/app.js"></script>
+
+    <!--
+        NOTA PARA EL EQUIPO:
+        Cuando conecten el sitio a Cloudflare Pages, Cloudflare puede ofrecerles
+        activar "Web Analytics" (gratuito). Si lo activan, van a pegar acá un
+        script <script defer src="https://static.cloudflareinsights.com/beacon.min.js/..."
+        con SU PROPIO token (no el de este ejemplo). Se quitó el que traía el
+        archivo original porque pertenecía a otro proyecto.
+    -->
+</body>
+</html>
