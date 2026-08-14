@@ -400,71 +400,11 @@
                 <div class="w-16 h-1 bg-coral mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <!-- Filtros de Galería -->
-            <div class="flex flex-wrap justify-center gap-2 mb-10 max-w-lg mx-auto">
-                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-pizarra text-white transition-all active" data-filter="todos">Todos</button>
-                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-white text-pizarra hover:bg-crema transition-all" data-filter="pintura">Pintura</button>
-                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-white text-pizarra hover:bg-crema transition-all" data-filter="modelado">Modelado</button>
-                <button class="gallery-filter-btn px-4 py-2 rounded-full border-2 border-pizarra text-sm font-bold bg-white text-pizarra hover:bg-crema transition-all" data-filter="manualidades">Objetos Útiles</button>
-            </div>
+            <!-- Filtros de Galería (generados automáticamente desde assets/js/galeria-data.js) -->
+            <div id="gallery-filtros" class="flex flex-wrap justify-center gap-2 mb-10 max-w-lg mx-auto"></div>
 
-            <!-- Grid de Galería -->
-            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Obras simulación artística con placeholders súper estéticos de acuarela y dibujo -->
-                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="pintura">
-                    <div class="aspect-square bg-gradient-to-tr from-coral/40 via-amarillo/40 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
-                        <span class="text-6xl animate-float-slow">🎨</span>
-                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Acuarela libre</span>
-                    </div>
-                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"El Dragón de Colores"</h4>
-                    <p class="text-xs text-pizarra/60">Hecho por Lucas (7 años)</p>
-                </div>
-
-                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="modelado">
-                    <div class="aspect-square bg-gradient-to-tr from-lila/30 via-menta/40 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
-                        <span class="text-6xl animate-float-fast">🦕</span>
-                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Arcilla y témpera</span>
-                    </div>
-                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Dino de Arcilla"</h4>
-                    <p class="text-xs text-pizarra/60">Hecho por Sofía (5 años)</p>
-                </div>
-
-                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="manualidades">
-                    <div class="aspect-square bg-gradient-to-tr from-amarillo/40 via-menta/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
-                        <span class="text-6xl animate-float-slow">🏺</span>
-                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Modelado Útil</span>
-                    </div>
-                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Maceta Carita Alegre"</h4>
-                    <p class="text-xs text-pizarra/60">Hecho por Felipe (9 años)</p>
-                </div>
-
-                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="pintura">
-                    <div class="aspect-square bg-gradient-to-tr from-lila/40 via-coral/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
-                        <span class="text-6xl animate-float-slow">🌈</span>
-                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Pintura acrílica</span>
-                    </div>
-                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Cielo del Atardecer"</h4>
-                    <p class="text-xs text-pizarra/60">Hecho por Martina (8 años)</p>
-                </div>
-
-                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="manualidades">
-                    <div class="aspect-square bg-gradient-to-tr from-menta/40 via-amarillo/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
-                        <span class="text-6xl animate-float-fast">👑</span>
-                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Collage Textil</span>
-                    </div>
-                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Corona de Rey Mágico"</h4>
-                    <p class="text-xs text-pizarra/60">Hecho por Ramiro (4 años)</p>
-                </div>
-
-                <div class="gallery-item bg-white p-4 rounded-3xl border-2 border-pizarra shadow-sm hover:shadow-lg transition-all" data-category="modelado">
-                    <div class="aspect-square bg-gradient-to-tr from-coral/30 via-lila/30 to-crema rounded-2xl flex items-center justify-center relative overflow-hidden border border-pizarra/10">
-                        <span class="text-6xl animate-float-slow">🧁</span>
-                        <span class="absolute bottom-2 left-2 bg-pizarra text-white text-[10px] px-2 py-0.5 rounded font-bold">Pastelina sólida</span>
-                    </div>
-                    <h4 class="font-bold text-pizarra text-base mt-3 font-handdrawn">"Cupcake del Bosque"</h4>
-                    <p class="text-xs text-pizarra/60">Hecho por Emilia (6 años)</p>
-                </div>
-            </div>
+            <!-- Grid de Galería (generado automáticamente desde assets/js/galeria-data.js) -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         </div>
     </section>
 

@@ -1,3 +1,4 @@
+import { categoriasGaleria, obrasGaleria } from './galeria-data.js';
 if (window.lucide) {
     window.lucide.createIcons();
   }
