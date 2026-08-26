@@ -1,13 +1,3 @@
-export const categoriasGaleria = [
-  { id: 'todos', etiqueta: 'Todos' },
-  { id: 'pintura', etiqueta: 'Pintura' },
-  { id: 'manualidades', etiqueta: 'Manualidades' },
-  { id: 'casitas-de-munecas', etiqueta: 'Casitas de Muñecas' },
-  { id: 'manitos-en-accion', etiqueta: 'Manitos en Acción' },
-  { id: 'munecos-y-personajes', etiqueta: 'Muñecos y Personajes' },
-  { id: 'nuestras-fiestas', etiqueta: 'Nuestras Fiestas' },
-];
-
 export const obrasGaleria = [
   {
     "imagen": "assets/img/galeria/casitas-de-munecas/20251025_094210.jpg",
